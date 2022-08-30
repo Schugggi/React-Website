@@ -40,8 +40,8 @@ function App() {
       {site === "Home" ? <Home></Home> : null}
       {site === "Portfolios" ? <Portfolios></Portfolios> : null}
 
-      <div class="container">
-        <footer class="py-3 my-4">
+      <div class="footersticky container">
+        <footer>
           <ul class="nav justify-content-center border-bottom pb-3 mb-3">
             <li className="nav-item"><a className="nav-link px-2 text-muted" onClick={() => handlePress("Home")}>Home</a></li>
             <li className="nav-item"><a className="nav-link px-2 text-muted" onClick={() => handlePress("Portfolios")}>Portfolios</a></li>
