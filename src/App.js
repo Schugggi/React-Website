@@ -36,19 +36,20 @@ function App() {
             <li className="nav-item"><a onClick={() => handlePress("Portfolios")} className={getClassName("Portfolios")}>Portfolios</a></li>
           </ul>
         </header>
-      </div>
-      {site === "Home" ? <Home></Home> : null}
-      {site === "Portfolios" ? <Portfolios></Portfolios> : null}
 
-      <div class="footersticky container">
-        <footer>
+        {site === "Home" ? <Home></Home> : null}
+        {site === "Portfolios" ? <Portfolios></Portfolios> : null}
+
+      </div>
+      <footer className="stickyfooter">
+        <div className="container">
           <ul class="nav justify-content-center border-bottom pb-3 mb-3">
             <li className="nav-item"><a className="nav-link px-2 text-muted" onClick={() => handlePress("Home")}>Home</a></li>
             <li className="nav-item"><a className="nav-link px-2 text-muted" onClick={() => handlePress("Portfolios")}>Portfolios</a></li>
           </ul>
           <p class="text-center text-muted">&copy; fridge 2022</p>
-        </footer>
-      </div>
+        </div>
+      </footer>
     </div>
   );
 }

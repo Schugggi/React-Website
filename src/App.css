@@ -10,8 +10,10 @@
   background-color: lightgray !important;
 }
 
-footer{
-  position: absolute;
-  bottom: 0;
-  width: 70%;
+.stickyfooter{
+  width: 100%;
+  bottom: 0px;
+  position: fixed;
+  
+
 }
