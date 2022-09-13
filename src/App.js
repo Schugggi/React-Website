@@ -1,9 +1,10 @@
 import './App.css';
+import './Header.css'
 import { Home } from './Home';
 import { useState } from "react"
 import { Portfolios } from "./Portfolios"
 
-import 'bootstrap/dist/css/bootstrap.min.css'
+// import 'bootstrap/dist/css/bootstrap.min.css'
 
 
 function App() {
@@ -25,13 +26,9 @@ function App() {
 
     <div className="App">
       <div className="container">
-        <header className="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-          <a href="/" className="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-
-            <span className="fs-4">fridge's Website</span>
-          </a>
-
-          <ul className="nav nav-pills">
+        <header>
+          <ul className="nav">
+            <li className="nav-item">fridge's Website</li>
             <li className="nav-item"><a onClick={() => handlePress("Home")} className={getClassName("Home")}>Home</a></li>
             <li className="nav-item"><a onClick={() => handlePress("Portfolios")} className={getClassName("Portfolios")}>Portfolios</a></li>
           </ul>
