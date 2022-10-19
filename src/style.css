@@ -1,0 +1,9 @@
+.visibilty{
+    display: inline-block;
+}
+
+@media screen and (max-width: 768px){
+    .visibilty{
+        display: none;
+    }
+}
