@@ -103,7 +103,7 @@ function App() {
           <p className="text-center text-muted">&copy; fridge 2022</p>
         </div>
       </footer> */}
-      <footer class="w-full h-16 bg-teal-500 border-t-2 border-white
+      <footer class="hidden md:flex w-full h-16 bg-teal-500 border-t-2 border-white
             fixed left-0 bottom-0
             flex justify-center items-center
             text-white
