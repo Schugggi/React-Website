@@ -5,12 +5,15 @@ import { Home } from './Home'
 import { useState } from "react"
 import { Portfolios } from "./Portfolios"
 import githublogo from './img/github_emblem.png'
+import linkedinlogo from './img/linkedin_logo.png'
+import logo from './img/placeholder_logo.png'
+import mail from './img/mail_logo.png'
 
 
 function App() {
 
   const [site, setSite] = useState("Home")
-
+  var menuOpened = false
   function handlePress(site) {
     setSite(site)
   }
@@ -23,6 +26,7 @@ function App() {
     } else {
       menu.classList.add("hidden");
     }
+    menu = !menu
   }
   return (
 
@@ -32,7 +36,7 @@ function App() {
         <header>
           <nav className="flex items-center justify-between flex-wrap bg-teal-500 p-6">
             <div className="flex items-center flex-no-shrink text-white mr-6">
-              <svg className="h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z" /></svg>
+              <img className="h-8 w-8 mr-2" width="54" height="54" src={logo} alt={"Platzhalter Logo"}></img>
               <span className="font-semibold text-xl tracking-tight">fridge's Website</span>
             </div>
             <div className="block md:hidden">
@@ -92,13 +96,15 @@ function App() {
             flex justify-center items-center
             text-white
             ">
-        <div className="space-x-4">
-          <h1>Kontakt</h1>
-          <a href="https://github.com/Schugggi" target="_blank"><img src={githublogo} alt={"githublogo"} className="inline object-contain h-12 w-24"></img></a>
+        <div className="space-x-6">
+          {/* <h1 className="justify-center">Kontakt</h1> */}
+          <a href="https://github.com/Schugggi" target="_blank" className=""><img src={githublogo} alt={"Github"} className="inline object-contain h-12 w-24"></img></a>
+          <a href="https://www.linkedin.com/in/joel-fritschi-9a7a26238/" target="_blank" className=""><img src={linkedinlogo} alt={"Linkedin"} className="inline object-contain h-12 w-24"></img></a>
+          <a href="mailto:Jfritschi@gmx.ch?subject= &body= " target="_blank" className=""><img src={mail} alt={"Linkedin"} className="inline object-contain h-12 w-24"></img></a>
         </div>
       </footer>
     </div>
-  );
+  )
 }
 
 
