@@ -5,8 +5,6 @@ import { Home } from './Home';
 import { useState } from "react"
 import { Portfolios } from "./Portfolios"
 
-// import 'bootstrap/dist/css/bootstrap.min.css'
-
 
 function App() {
 
@@ -31,12 +29,6 @@ function App() {
     <div className="App">
       <div className="">
         <header>
-          {/* <ul className="nav">
-            <li className="nav-item">fridge's Website</li>
-            <li className="nav-item"><a onClick={() => handlePress("Home")} className={getClassName("Home")}>Home</a></li>
-            <li className="nav-item"><a onClick={() => handlePress("Portfolios")} className={getClassName("Portfolios")}>Portfolios</a></li>
-          </ul> */}
-
           <nav className="flex items-center justify-between flex-wrap bg-teal-500 p-6">
             <div className="flex items-center flex-no-shrink text-white mr-6">
               <svg className="h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z" /></svg>
@@ -94,15 +86,6 @@ function App() {
         {site === "Portfolios" ? <Portfolios></Portfolios> : null}
 
       </div>
-      {/* <footer className="stickyfooter">
-        <div className="container">
-          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li className="nav-item"><a className="nav-link px-2 text-muted" onClick={() => handlePress("Home")}>Home</a></li>
-            <li className="nav-item"><a className="nav-link px-2 text-muted" onClick={() => handlePress("Portfolios")}>Portfolios</a></li>
-          </ul>
-          <p className="text-center text-muted">&copy; fridge 2022</p>
-        </div>
-      </footer> */}
       <footer class="hidden md:flex w-full h-16 bg-teal-500 border-t-2 border-white
             fixed left-0 bottom-0
             flex justify-center items-center
