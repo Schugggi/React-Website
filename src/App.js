@@ -1,9 +1,10 @@
-import './App.css';
+import './App.css'
 import './Header.css'
 import './style.css'
-import { Home } from './Home';
+import { Home } from './Home'
 import { useState } from "react"
 import { Portfolios } from "./Portfolios"
+import githublogo from './img/github_emblem.png'
 
 
 function App() {
@@ -86,14 +87,14 @@ function App() {
         {site === "Portfolios" ? <Portfolios></Portfolios> : null}
 
       </div>
-      <footer class="hidden md:flex w-full h-16 bg-teal-500 border-t-2 border-white
+      <footer className="hidden md:flex w-full h-16 bg-teal-500 border-t-2 border-white
             fixed left-0 bottom-0
             flex justify-center items-center
             text-white
             ">
         <div className="space-x-4">
-          <button className="bg-transparent hover:bg-neutral-700 text-neutral-900 font-semibold hover:text-white py-2 px-4 border border-neutral-900 hover:border-transparent rounded"><a className="" onClick={() => handlePress("Home")}>Home</a></button>
-          <button className="bg-transparent hover:bg-neutral-700 text-neutral-900 font-semibold hover:text-white py-2 px-4 border border-neutral-900 hover:border-transparent rounded"><a className="" onClick={() => handlePress("Portfolios")}>Portfolios</a></button>
+          <h1>Kontakt</h1>
+          <a href="https://github.com/Schugggi" target="_blank"><img src={githublogo} alt={"githublogo"} className="inline object-contain h-12 w-24"></img></a>
         </div>
       </footer>
     </div>

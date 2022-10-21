@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "Dosis-Medium";
+    src: local("Dosis-Medium"),
+    url("./fonts/dosis/Dosis-Medium.ttf") format("truetype");
+}
+
+*{
+    font-family: "Dosis-Medium";
+}
