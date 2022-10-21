@@ -34,10 +34,10 @@ function App() {
     <div className="App">
       <div className="">
         <header>
-          <nav className="flex items-center justify-between flex-wrap bg-teal-500 p-6">
+          <nav className="flex items-center justify-between flex-wrap bg-teal-600 p-6">
             <div className="flex items-center flex-no-shrink text-white mr-6">
               <img className="h-8 w-8 mr-2" width="54" height="54" src={logo} alt={"Platzhalter Logo"}></img>
-              <span className="font-semibold text-xl tracking-tight">fridge's Website</span>
+              <span className="text-2xl tracking-tight">fridge's Website</span>
             </div>
             <div className="block md:hidden">
               <button onClick={() => changeMenu()} className="flex items-center px-3 py-2 border rounded text-teal-lighter border-teal-light hover:text-white hover:border-white">
@@ -46,12 +46,12 @@ function App() {
               <div id="menu" className="hidden w-44 rounded dark:bg-teal-500 items-right">
               <ul className="text-neutral-700 rounded dark:text-neutral-900">
                 <li>
-                  <a onClick={() => handlePress("Home")} className="block py-2 px-2 dark:hover:bg-neutral-700 rounded dark:hover:text-white">
+                  <a onClick={() => handlePress("Home")} className="block text-md dark:hover:bg-neutral-700 rounded dark:hover:text-white">
                     Home
                   </a>
                 </li>
                 <li>
-                  <a onClick={() => handlePress("Portfolios")} className="block py-2 px-2 dark:hover:bg-neutral-700 rounded dark:hover:text-white">
+                  <a onClick={() => handlePress("Portfolios")} className="block text-md dark:hover:bg-neutral-700 rounded dark:hover:text-white">
                     Portfolios
                   </a>
                 </li>
@@ -59,14 +59,12 @@ function App() {
             </div>
             </div>
 
-            
-
             <div className="w-full block flex-grow md:flex md:items-center md:w-auto">
-              <div className="visibilty text-sm md:flex-grow">
-                <a onClick={() => handlePress("Home")} className="block mt-4 md:inline-block md:mt-0 text-teal-lighter hover:text-white mr-4">
+              <div className="visibilty md:flex-grow">
+                <a onClick={() => handlePress("Home")} className="block text-base mt-4 md:inline-block md:mt-0 text-teal-lighter hover:text-white mr-4">
                   Home
                 </a>
-                <a onClick={() => handlePress("Portfolios")} className="block mt-4 md:inline-block md:mt-0 text-teal-lighter hover:text-white mr-4">
+                <a onClick={() => handlePress("Portfolios")} className="block text-base mt-4 md:inline-block md:mt-0 text-teal-lighter hover:text-white mr-4">
                   Portfolios
                 </a>
               </div>
@@ -74,24 +72,11 @@ function App() {
           </nav>
         </header>
 
-        <div id="menu" className="hidden w-44 rounded dark:bg-teal-500">
-          <ul className="text-neutral-700 dark:text-neutral-900">
-            <li><a onClick={() => handlePress("Home")} className="block py-2 px-4 dark:hover:bg-neutral-700 rounded dark:hover:text-white">
-              Home
-            </a>
-            </li>
-            <li><a onClick={() => handlePress("Portfolios")} className="block py-2 px-4 dark:hover:bg-neutral-700 neutral dark:hover:text-white">
-              Portfolios
-            </a>
-            </li>
-          </ul>
-        </div>
-
         {site === "Home" ? <Home></Home> : null}
         {site === "Portfolios" ? <Portfolios></Portfolios> : null}
 
       </div>
-      <footer className="hidden md:flex w-full h-16 bg-teal-500 border-t-2 border-white
+      <footer className="hidden md:flex w-full h-16 bg-teal-600 border-t-2 border-white
             fixed left-0 bottom-0
             flex justify-center items-center
             text-white
