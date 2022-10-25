@@ -43,20 +43,20 @@ function App() {
               <button onClick={() => changeMenu()} className="flex items-center px-3 py-2 border rounded text-teal-lighter border-teal-light hover:text-white hover:border-white">
                 <svg className="h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" /></svg>
               </button>
-              <div id="menu" className="hidden w-44 rounded dark:bg-teal-500 items-right">
-              <ul className="text-neutral-700 rounded dark:text-neutral-900">
-                <li>
-                  <a onClick={() => handlePress("Home")} className="block text-md dark:hover:bg-neutral-700 rounded dark:hover:text-white">
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <a onClick={() => handlePress("Portfolios")} className="block text-md dark:hover:bg-neutral-700 rounded dark:hover:text-white">
-                    Portfolios
-                  </a>
-                </li>
-              </ul>
-            </div>
+              <div id="menu" className="hidden w-28 rounded dark:bg-teal-500 items-right">
+                <ul className="text-neutral-700 rounded dark:text-neutral-900">
+                  <li>
+                    <a onClick={() => handlePress("Home")} className="block text-md dark:hover:bg-neutral-700 rounded dark:hover:text-white">
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    <a onClick={() => handlePress("Portfolios")} className="block text-md dark:hover:bg-neutral-700 rounded dark:hover:text-white">
+                      Portfolios
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
 
             <div className="w-full block flex-grow md:flex md:items-center md:w-auto">
@@ -76,13 +76,8 @@ function App() {
         {site === "Portfolios" ? <Portfolios></Portfolios> : null}
 
       </div>
-      <footer className="hidden md:flex w-full h-16 bg-teal-600 border-t-2 border-white
-            fixed left-0 bottom-0
-            flex justify-center items-center
-            text-white
-            ">
+      <footer className="flex w-full h-16 bg-teal-600 border-white md:fixed left-0 bottom-0 flex justify-center items-center text-white">
         <div className="space-x-6">
-          {/* <h1 className="justify-center">Kontakt</h1> */}
           <a href="https://github.com/Schugggi" target="_blank" className=""><img src={githublogo} alt={"Github"} className="inline object-contain h-12 w-24"></img></a>
           <a href="https://www.linkedin.com/in/joel-fritschi-9a7a26238/" target="_blank" className=""><img src={linkedinlogo} alt={"Linkedin"} className="inline object-contain h-12 w-24"></img></a>
           <a href="mailto:Jfritschi@gmx.ch?subject= &body= " target="_blank" className=""><img src={mail} alt={"Linkedin"} className="inline object-contain h-12 w-24"></img></a>
